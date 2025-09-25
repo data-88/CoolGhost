@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CoolGhost</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="veil"></div>
+    <main class="container">
+      <header class="brand">
+        <div class="ghost">👻</div>
+        <h1>Cool<span>Ghost</span></h1>
+        <p class="tag">Whisper your brand confessions to the void.</p>
+      </header>
+
+      <section id="gate" class="panel">
+        <h2>Enter the password to proceed</h2>
+        <form id="gate-form">
+          <input id="password" type="password" placeholder="Password" autocomplete="current-password" required />
+          <button type="submit">Enter</button>
+          <p class="hint">Hint: the word is what you sell.</p>
+          <p id="gate-error" class="error" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section id="confessional" class="panel hidden" aria-hidden="true">
+        <h2>Brand Confessional</h2>
+        <form id="confession-form">
+          <label>
+            <span>Confession 1:</span>
+            <em>What illusion does your brand perpetuate in the market?</em>
+            <textarea id="c1" rows="3" placeholder="Speak your truth to the spirits..." required></textarea>
+          </label>
+          <label>
+            <span>Confession 2:</span>
+            <em>What truth about your industry do you refuse to acknowledge?</em>
+            <textarea id="c2" rows="3" placeholder="Speak your truth to the spirits..." required></textarea>
+          </label>
+          <label>
+            <span>Confession 3:</span>
+            <em>What do you sell that the world doesn’t actually need?</em>
+            <textarea id="c3" rows="3" placeholder="Speak your truth to the spirits..." required></textarea>
+          </label>
+          <label>
+            <span>Confession 4:</span>
+            <em>Whose attention are you harvesting—and what are you turning their life into?</em>
+            <textarea id="c4" rows="3" placeholder="Speak your truth to the spirits..." required></textarea>
+          </label>
+          <label>
+            <span>Confession 5:</span>
+            <em>How do we get hold of you?</em>
+            <textarea id="c5" rows="2" placeholder="Email, handle, or any contact. (optional)"></textarea>
+          </label>
+          <div class="actions">
+            <button type="submit">Send to the Void</button>
+            <p id="status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+
+      <footer>
+        <small>© <span id="year"></span> CoolGhost. All rights reserved in the afterlife.</small>
+      </footer>
+    </main>
+
+    <script src="/app.js" defer></script>
+  </body>
+  </html>
+
+
